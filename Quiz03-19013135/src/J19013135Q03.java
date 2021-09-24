@@ -38,7 +38,7 @@ class Rectangle {
 
 		// 코드
 		if(width1==width2 && height1==height2) return true;
-		else return false;
+		else return false;//직사각형의 가로, 세로의 길이가 같다면 넓이가 같은 동일한 모양의 직사각형이다.
 	}
 }
 public class J19013135Q03 {

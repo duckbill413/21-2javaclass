@@ -45,6 +45,7 @@ class Student extends Person{
 	public void setId(int id) {
 		this.id = id;
 	}
+	@Override
 	public void view()
 	{
 		System.out.println("학생-[이름 : "+getName()+", 나이 : "+getAge()+", 학번 : "+id+"]");

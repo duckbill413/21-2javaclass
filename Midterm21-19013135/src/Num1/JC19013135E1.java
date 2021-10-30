@@ -4,11 +4,18 @@ class Triangle{
 	private int id;
 	private double x, y;
 
-	public Triangle(){
-		this.id = (int)(Math.random()*10+1);
+	public Triangle(Triangle [] tr, int cnt){
+		while(true) {
+			boolean found = true;
+			int id = (int)(Math.random()*10)+1;
+			for(int i=0; i<cnt; i++)
+				if(tr[i].getid()==id) found=false;
+			if(found==true) {
+				this.id = id;
+				break;
+			}
+		}
 	}
-
-
 	public void setXY(double x, double y)
 	{
 		this.x = x;
@@ -53,7 +60,7 @@ public class JC19013135E1 {
 		tr = new Triangle [3];
 
 		for(int i=0; i<tr.length; i++)
-			tr[i] = new Triangle();
+			tr[i] = new Triangle(tr, i);
 
 		tr[0].setXY(15.0, 9.0);
 		tr[1].setXY(9.0, 15.0);

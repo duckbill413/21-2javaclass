@@ -16,12 +16,12 @@ public class JC19013135Q07 extends JFrame{
 		
 		c.setBackground(Color.GREEN);
 		
-		setSize(300, 250);
+		setSize(500, 500);
 		setLocation(1000, 500);
 		setVisible(true);
 	}
-	
-	class MyMouseAdapter extends MouseAdapter{
+	//내부 클래스
+	private class MyMouseAdapter extends MouseAdapter{
 		public void mouseReleased(MouseEvent e) {
 			Component c = (Component)e.getSource();
 			c.setBackground(Color.GREEN);

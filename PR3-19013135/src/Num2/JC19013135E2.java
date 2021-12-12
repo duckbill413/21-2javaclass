@@ -31,7 +31,9 @@ public class JC19013135E2 extends JFrame{
 		{
 			int x = (int)(Math.random()*500);
 			int y = (int)(Math.random()*400)+50;
-			move.setLocation(x,y);
+			int xx = e.getX();
+			int yy = e.getY();
+			move.setLocation(xx,yy);
 		}
 	}
 	public static void main(String args[]) {

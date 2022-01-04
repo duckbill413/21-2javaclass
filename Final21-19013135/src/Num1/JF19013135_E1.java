@@ -21,7 +21,7 @@ public class JF19013135_E1 {
 		v.add(new Point(-20, 15));
 
 		try {
-			FileWriter fout = new FileWriter("c:\\Temp\\19013135.dat");
+			FileWriter fout = new FileWriter("19013135.dat");
 			Iterator<Point> it = v.iterator();
 			while(it.hasNext()) {
 				Point find = it.next();

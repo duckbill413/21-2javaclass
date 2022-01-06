@@ -51,7 +51,7 @@ class operThread1 implements Runnable{
 	public void setFlag(boolean flag1) {
 		flag = flag1;
 	}
-	public void stop() {
+	synchronized public void stop() {
 		p.setOffTxt();
 	}
 	synchronized public void play() {
@@ -130,7 +130,7 @@ public class JC19013135_E5 extends JFrame{
 	private showJava p = new showJava();
 	private showTimer q = new showTimer();
 	public JC19013135_E5() {
-		setTitle("¾²·¹µå Runnable");
+		setTitle("Runnable Thread");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		Container c = getContentPane();
